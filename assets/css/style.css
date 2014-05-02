@@ -4,10 +4,15 @@ body, html {
 
 .heroSlider {
 	width: 100%;
-	background-color: #a4a4a4;
+	background-color: #E0E0E0;
 	height: 300px;
 }
 
+.footer {
+    background-color: #205E8C !important;
+    width: 100% !important;
+    color: #fff;
+}
 
 /*Overwriting Bootstrap Default Styles*/
 
@@ -38,4 +43,3 @@ body, html {
 .navbar-default .navbar-toggle {
     border-color: #FFF !important;
 }
-

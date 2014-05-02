@@ -1,0 +1,53 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   assets/css/fonts.css
+#	modified:   assets/css/style.css
+#	new file:   assets/fonts/orbitron-black-demo.html
+#	new file:   assets/fonts/orbitron-black-webfont.eot
+#	new file:   assets/fonts/orbitron-black-webfont.svg
+#	new file:   assets/fonts/orbitron-black-webfont.ttf
+#	new file:   assets/fonts/orbitron-black-webfont.woff
+#	new file:   assets/fonts/orbitron-bold-demo.html
+#	new file:   assets/fonts/orbitron-bold-webfont.eot
+#	new file:   assets/fonts/orbitron-bold-webfont.svg
+#	new file:   assets/fonts/orbitron-bold-webfont.ttf
+#	new file:   assets/fonts/orbitron-bold-webfont.woff
+#	new file:   assets/fonts/orbitron-medium-demo.html
+#	new file:   assets/fonts/orbitron-medium-webfont.eot
+#	new file:   assets/fonts/orbitron-medium-webfont.svg
+#	new file:   assets/fonts/orbitron-medium-webfont.ttf
+#	new file:   assets/fonts/orbitron-medium-webfont.woff
+#	new file:   assets/fonts/orbitron-regular-demo.html
+#	new file:   assets/fonts/orbitron-regular-webfont.eot
+#	new file:   assets/fonts/orbitron-regular-webfont.svg
+#	new file:   assets/fonts/orbitron-regular-webfont.ttf
+#	new file:   assets/fonts/orbitron-regular-webfont.woff
+#	new file:   assets/fonts/specimen_files/orbitron-black-cleartype.png
+#	new file:   assets/fonts/specimen_files/orbitron-bold-cleartype.png
+#	new file:   assets/fonts/specimen_files/orbitron-medium-cleartype.png
+#	new file:   assets/fonts/specimen_files/orbitron-regular-cleartype.png
+#	modified:   assets/fonts/stylesheet.css
+#	modified:   index.html
+#
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    assets/fonts/glyphicons-halflings-regular.eot
+#	deleted:    assets/fonts/glyphicons-halflings-regular.svg
+#	deleted:    assets/fonts/glyphicons-halflings-regular.ttf
+#	deleted:    assets/fonts/glyphicons-halflings-regular.woff
+#	deleted:    assets/fonts/specimen_files/_notes/dwsync.xml
+#	deleted:    assets/fonts/specimen_files/synthview_-_novecentowide-bold-cleartype.png
+#	deleted:    assets/fonts/synthview_-_novecentowide-bold-demo.html
+#	deleted:    assets/fonts/synthview_-_novecentowide-bold-webfont.eot
+#	deleted:    assets/fonts/synthview_-_novecentowide-bold-webfont.svg
+#	deleted:    assets/fonts/synthview_-_novecentowide-bold-webfont.ttf
+#	deleted:    assets/fonts/synthview_-_novecentowide-bold-webfont.woff
+#
+
