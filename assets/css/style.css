@@ -2,6 +2,18 @@ body, html {
     background-color: #E0E0E0;
 }
 
+.heroSlider {
+	width: 100% !important;
+	background-color: #E0E0E0;
+	height: 300px;
+}
+
+.footer {
+    background-color: #205E8C !important;
+    width: 100% !important;
+    color: #fff;
+}
+
 /*Overwriting Bootstrap Default Styles*/
 
 .navbar-default {
