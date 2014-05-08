@@ -2,10 +2,36 @@ body, html {
     background-color: #E0E0E0 !important;
 }
 
-.heroSlider {
-	width: 100%;
-	background-color: #E0E0E0;
-	height: 300px;
+.logo {
+    width: 210px;
+    height: 77px;
+    -moz-transition: opacity 200ms;
+    -webkit-transition: opacity 200ms;
+    -o-transition: opacity 200ms;
+    transition: opacity 200ms;
+}
+.logo:hover {
+    opacity: .8;
+}
+
+.moreFeatures {
+    margin-top: -19px;
+    width: 100% !important;
+    height: 300px;
+    background: #cbcbcb;
+    border-top: 2px solid #a1a1a1;
+}
+
+.howItWorks {
+    width: 100%;
+    height: 300px;
+    background: #cbcbcb;
+}
+
+.specs {
+    width: 100%;
+    height: 300px;
+    background: #cbcbcb;
 }
 
 .footer {
@@ -16,15 +42,33 @@ body, html {
 
 /*Overwriting Bootstrap Default Styles*/
 
+.navbar-header {
+    height: 110px;
+}
+
 .navbar-default {
-    border-color: #154268 !important;
-    background-color: #154268 !important;
+    background-color: #E0E0E0 !important;
+    border-bottom: 2px solid #b1b1b1 !important;
 }
 
-.navbar-default .navbar-nav > li > a {
-    color: #FFF !important;
+.navbar-default .navbar-nav > li {
+    margin-right: 30px;
+    margin-top: 34px;
 }
-
+.navbar-default .navbar-nav > li > a{
+    color: #A4A4A4 !important;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    border: 1px solid #E0E0E0;
+    -moz-transition: color 200ms, border 200ms;
+    -webkit-transition: color 200ms, border 200ms;
+    -o-transition: color 200ms, border 200ms;
+    transition: color 200ms, border 200ms;
+}
+.navbar-default .navbar-nav > li > a:hover {
+        border: 1px solid #154368;
+             color: #154368 !important;
+}
 .navbar-default .navbar-brand {
     color: #FFF !important;
 }
@@ -43,3 +87,4 @@ body, html {
 .navbar-default .navbar-toggle {
     border-color: #FFF !important;
 }
+
