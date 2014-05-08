@@ -29,7 +29,7 @@ body, html {
     border-top: 1px solid #E0E0E0;
 }
 
-.sectionHeader {
+.sectionHeader1 {
     width: 150px;
     height: 120px;
     margin-left: 86px;
@@ -37,7 +37,7 @@ body, html {
     background: #205E8C;
     margin-top: -2px;
 }
-.sectionHeader > p {
+.sectionHeader1 > p {
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;
     font-size: 24px;

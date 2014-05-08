@@ -27,9 +27,26 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+      e.preventDefault();
 
-  <body>
+      var target = this.hash,
+      $target = $(target);
+
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top-112
+      }, 900, 'swing', function () {
+          window.location.hash = target;
+      });
+    });
+  });
+</script>
+</head>
+
+<body>
 <!--/////////////////////-->
 <!-- HEADER -->
 <!--/////////////////////-->
@@ -47,8 +64,9 @@
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#features">Features</a></li>
+        <li><a href="#how">How it Works</a></li>
         <li><a href="#specs">Specs</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -58,7 +76,7 @@
 <!--/////////////////////-->
 <!-- SLIDER -->
 <!--/////////////////////-->
-<div class="slider">
+<div class="slider" id="home">
 <div id="showcase" class="showcase" style="width: 100%;">
   <!-- Each child div in #showcase represents a slide -->
   <div class="showcase-slide">
@@ -121,8 +139,8 @@
 <!-- FEAUTURES -->
 <!--/////////////////////-->
 
-<div class="moreFeatures">
-    <div class="sectionHeader">
+<div class="moreFeatures" id="features">
+    <div class="sectionHeader1">
       <p>Features</p>
     </div>
 </div>
@@ -130,7 +148,7 @@
 <!--/////////////////////-->
 <!-- HOW IT WORKS -->
 <!--/////////////////////-->
-<div class="howItWorks">How it Works
+<div class="howItWorks" id="how">How it Works
   <h1>Attach These dtectors Anywhere!</h1>
     <p>Research claims that amongst the average Americans, we lose our phone, keys, and wallets the most and spend the equivalent of 153 days searching for them. Save time and find your stuff quickly using dtect!</p>
 </div>
@@ -139,14 +157,14 @@
 <!--/////////////////////-->
 <!-- SPECS -->
 <!--/////////////////////-->
-<div class="specs">Specs</div>
+<div class="specs" id="specs">Specs</div>
 <br class="clear" />
 
 
 <!--/////////////////////-->
 <!-- FOOTER / CONTACT INFO -->
 <!--/////////////////////-->
-<div class="footer"><!-- footer -->
+<div class="footer" id="contact"><!-- footer -->
   <div class="navigation">
     <strong>Navigation</strong><br />
       Home<br />
@@ -169,8 +187,6 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/showcase.js"></script>
 <script type="text/javascript" src="assets/js/slider.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
