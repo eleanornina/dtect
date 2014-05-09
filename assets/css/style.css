@@ -24,9 +24,9 @@ body, html {
 /////////////////////*/
 .moreFeatures {
     width: 100% !important;
-    height: 400px;
     background: #154268;
     border-top: 1px solid #E0E0E0;
+    padding-bottom: 75px;
 }
 
 .moreFeatures ul {
@@ -78,8 +78,8 @@ float: right;
 
 .howItWorks {
     width: 100%;
-    height: 300px;
     background: #cbcbcb;
+    padding-bottom: 75px;
 }
 
 /*/////////////////////
@@ -87,8 +87,34 @@ float: right;
 /////////////////////*/
 .specs {
     width: 100%;
-    height: 300px;
-    background: #cbcbcb;
+    padding-bottom: 75px;
+    background: #154268;
+    color: #fff;
+}
+
+.specs p {
+    padding-top: 30px;
+}
+
+.specs ul {
+    list-style: none;
+}
+
+.sectionHeader3 {
+    height: 120px;
+    border: 2px solid #E0E0E0;
+    background: #205E8C;
+    margin-top: -20px;
+}
+
+.sectionHeader3 > p {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding-left: 12px;
+    padding-top: 75px;
+    color: #E0E0E0;
+    text-align: center;
 }
 
 /*/////////////////////
