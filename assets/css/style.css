@@ -124,6 +124,18 @@ float: right;
     background-color: #205E8C !important;
     width: 100% !important;
     color: #fff;
+    padding: 50px;
+}
+
+.footer a{
+    color: #cbcbcb;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.footer a:hover {
+    color: #cbcbcb;
+    opacity: 0.5;
 }
 
 /*Overwriting Bootstrap Default Styles*/
