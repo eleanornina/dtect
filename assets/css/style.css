@@ -27,6 +27,7 @@ body, html {
     background: #154268;
     border-top: 1px solid #E0E0E0;
     padding-bottom: 75px;
+    margin-top: -19px;
 }
 
 .moreFeatures ul {
@@ -42,7 +43,7 @@ body, html {
     height: 120px;
     border: 2px solid #E0E0E0;
     background: #205E8C;
-    margin-top: -20px;
+    margin-top: -2px;
 }
 
 .sectionHeader1 > p {
@@ -60,10 +61,23 @@ body, html {
 
 .sectionHeader2 {
 height: 120px;
-border: 2px solid #E0E0E0;
-background: none repeat scroll 0% 0% #205E8C;
+border: 2px solid #154268;
+background: none repeat scroll 0% 0% #E0E0E0;
 margin-top: -20px;
 float: right;
+}
+.sectionHeader2::after {
+  content:"\00A0";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -24px;
+  width: 0;
+  height: 0;
+  -moz-border-width: 19px 22px 0px 0;
+  border-width: 19px 22px 0px 0;
+  border-style: solid;
+  border-color: transparent #E0E0E0 transparent transparent;
 }
 
 .sectionHeader2 > p {
@@ -72,7 +86,7 @@ float: right;
     font-size: 24px;
     padding-left: 12px;
     padding-top: 75px;
-    color: #E0E0E0;
+    color: #205E8C;
     text-align: center;
 }
 
@@ -102,9 +116,22 @@ float: right;
 
 .sectionHeader3 {
     height: 120px;
-    border: 2px solid #E0E0E0;
+    border: 2px solid #cbcbcb;
     background: #205E8C;
     margin-top: -20px;
+}
+.sectionHeader3::after {
+  content:"\00A0";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -24px;
+  width: 0;
+  height: 0;
+  -moz-border-width: 19px 22px 0px 0;
+  border-width: 19px 22px 0px 0;
+  border-style: solid;
+  border-color: transparent #205E8C transparent transparent;
 }
 
 .sectionHeader3 > p {
