@@ -47,6 +47,27 @@
     });
   });
 </script>
+<script type="text/javascript">
+$(function(){
+ var shrinkHeader = 300;
+  $(window).scroll(function() {
+    var scroll = getCurrentScroll();
+      if ( scroll >= shrinkHeader ) {
+           $('.navbar-header').addClass('shrink');
+           $('.navbar-default .navbar-nav').addClass('shrink');
+           $('.logo').addClass('shrink');
+        }
+        else {
+            $('.navbar-header').removeClass('shrink');
+            $('.navbar-default .navbar-nav').removeClass('shrink');
+            $('.logo').removeClass('shrink');
+        }
+  });
+function getCurrentScroll() {
+    return window.pageYOffset || document.documentElement.scrollTop;
+    }
+});
+</script>
 </head>
 
 <body>
