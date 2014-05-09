@@ -10,6 +10,7 @@ body, html {
     -o-transition: opacity 200ms;
     transition: opacity 200ms;
 }
+
 .logo:hover {
     opacity: .8;
 }
@@ -22,21 +23,28 @@ body, html {
  FEAUTURES SECTION
 /////////////////////*/
 .moreFeatures {
-    margin-top: -19px;
     width: 100% !important;
-    height: 400px;
     background: #154268;
     border-top: 1px solid #E0E0E0;
+    padding-bottom: 75px;
+}
+
+.moreFeatures ul {
+    color: #ffffff;
+    font-size: 20px;
+    list-style: none;
+    line-height: 35px;
+    padding-top: 30px;
+    font-weight: 400;
 }
 
 .sectionHeader1 {
-    width: 150px;
     height: 120px;
-    margin-left: 86px;
     border: 2px solid #E0E0E0;
     background: #205E8C;
-    margin-top: -2px;
+    margin-top: -20px;
 }
+
 .sectionHeader1 > p {
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;
@@ -44,14 +52,34 @@ body, html {
     padding-left: 12px;
     padding-top: 75px;
     color: #E0E0E0;
+    text-align: center;
 }
 /*/////////////////////
  HOW IT WORKS SECTION
 /////////////////////*/
+
+.sectionHeader2 {
+height: 120px;
+border: 2px solid #E0E0E0;
+background: none repeat scroll 0% 0% #205E8C;
+margin-top: -20px;
+float: right;
+}
+
+.sectionHeader2 > p {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding-left: 12px;
+    padding-top: 75px;
+    color: #E0E0E0;
+    text-align: center;
+}
+
 .howItWorks {
     width: 100%;
-    height: 300px;
     background: #cbcbcb;
+    padding-bottom: 75px;
 }
 
 /*/////////////////////
@@ -59,8 +87,34 @@ body, html {
 /////////////////////*/
 .specs {
     width: 100%;
-    height: 300px;
-    background: #cbcbcb;
+    padding-bottom: 75px;
+    background: #154268;
+    color: #fff;
+}
+
+.specs p {
+    padding-top: 30px;
+}
+
+.specs ul {
+    list-style: none;
+}
+
+.sectionHeader3 {
+    height: 120px;
+    border: 2px solid #E0E0E0;
+    background: #205E8C;
+    margin-top: -20px;
+}
+
+.sectionHeader3 > p {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding-left: 12px;
+    padding-top: 75px;
+    color: #E0E0E0;
+    text-align: center;
 }
 
 /*/////////////////////
@@ -70,6 +124,18 @@ body, html {
     background-color: #205E8C !important;
     width: 100% !important;
     color: #fff;
+    padding: 50px;
+}
+
+.footer a{
+    color: #cbcbcb;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.footer a:hover {
+    color: #cbcbcb;
+    opacity: 0.5;
 }
 
 /*Overwriting Bootstrap Default Styles*/

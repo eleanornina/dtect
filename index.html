@@ -38,8 +38,8 @@
 
       $('html, body').stop().animate({
           'scrollTop': $target.offset().top-112
-      }, 900, 'swing', function () {
-          window.location.hash = target;
+      }, 900, '', function () {
+          window.location.hash = target-112;
       });
     });
   });
@@ -138,47 +138,119 @@
 <!--/////////////////////-->
 <!-- FEAUTURES -->
 <!--/////////////////////-->
-<div class="moreFeatures" id="features">
-    <div class="sectionHeader1">
-      <p>Features</p>
-    </div>
-</div>
+<div class="moreFeatures" id="features"> <!-- moreFeatures -->
+  <div class="container"> <!-- container -->
+    <div class="row"> <!-- row -->
+      <div class="sectionHeader1 col-lg-2 col-md-3 col-sm-4 col-xs-12"> <!--sectionHeader1 -->
+        <p>Features</p>
+      </div><!-- /sectionHeader1 -->
+    </div><!-- /row -->
+
+    <div class="row"> <!-- row -->
+      <ul>
+        <li>Color-coded stickers for each item</li>
+        <li>Infrared detection via mobile camera</li>
+        <li>Statistics based on how often you lose items</li>
+        <li>Network of locators if your object is lost and out of range</li>
+      </ul>
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+</div><!-- moreFeatures -->
 
 <!--/////////////////////-->
 <!-- HOW IT WORKS -->
 <!--/////////////////////-->
-<div class="howItWorks" id="how">How it Works
-  <h1>Attach These dtectors Anywhere!</h1>
-    <p>Research claims that amongst the average Americans, we lose our phone, keys, and wallets the most and spend the equivalent of 153 days searching for them. Save time and find your stuff quickly using dtect!</p>
-</div>
-<br class="clear" />
+<div class="howItWorks" id="how"> <!-- howItWorks -->
+  <div class="container"> <!-- container -->
+    <div class="row"> <!-- row -->
+      <div class="sectionHeader2 col-lg-3 col-lg-offset-9 col-md-3  col-md-offset-9 col-sm-4 col-sm-offset-8 col-xs-12"> <!--sectionHeader2-->
+        <p>How it Works</p>
+      </div><!-- /sectionHeader2 -->
+    </div><!-- /row -->
+    <div class="row"> <!-- row -->
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"> <!-- column -->
+        <h3>Attach Your dtectors</h1>
+        <p>Place your color-coded dtector sticker on your item (keys, phone, laptop, wallet) and register that item to your application.</p>
+      </div> <!-- /column -->
+
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"> <!-- column -->
+        <h3>Start Searching</h1>
+        <p>Begin the search for your lost item by clicking on the item and then pressing "Find."  You will then be presented with a compass and a distance that will lead you to your lost item.</p>
+      </div> <!-- /column -->
+
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"> <!-- column -->
+        <h3>Retrieve Your Items</h1>
+        <p>As you approach your item, the indicator sound will begin to beep faster until you are within 5 inches of your item.  Once located, click the "Found" button on the application</p>
+      </div> <!-- /column -->
+    </div> <!-- /row -->
+  </div> <!-- container -->
+</div> <!--howItWorks -->
 
 <!--/////////////////////-->
 <!-- SPECS -->
 <!--/////////////////////-->
-<div class="specs" id="specs">Specs</div>
-<br class="clear" />
+<div class="specs" id="specs">
+  <div class="container"> <!-- container -->
+    <div class="row"> <!-- row -->
+      <div class="sectionHeader3 col-lg-2 col-md-3 col-sm-4 col-xs-12"> <!--sectionHeader3 -->
+        <p>Specs</p>
+      </div><!-- /sectionHeader3 -->
+    </div><!-- /row -->
+
+    <div class="row"><!-- row -->
+      <div class="col-lg-3 col-lg-offset-3 col-md-3 col-sm-3 col-xs-12"> <!-- column -->
+        <p>The dtect application can be downloaded for android and ios for your desktops and mobile devices.  The application costs $30.00 with the inclusion of 5 dtector stickers for your items.  You can purchase additional stickers for $5 each and unlock additional features by upgrading to PRO for $45.00 total.</p>
+      </div> <!-- /column -->
+
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"> <!-- column -->
+        <h3>Included ($30)</h3>
+        <ul>
+          <li>Customer Account</li>
+          <li>5 Dtector Stickers</li>
+          <li>Item Location via Phone or Desktop Application</li>
+          <li>Basic Statistics Based on your Activity</li>
+        </ul>
+      </div> <!-- /column -->
+
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"> <!-- column -->
+        <h3>ProTools ($45)</h3>
+        <ul>
+          <li>Customer Account</li>
+          <li>5 Dtector Stickers</li>
+          <li>Item Location via Phone or Desktop Application</li>
+          <li>Premium Statistics Based on your Activity</li>
+          <li>Item Dtector for Lost/Stolen items via Wireless Network</li>
+        </ul>
+      </div> <!-- /column -->
+
+    </div> <!-- /row -->
+  </div><!-- /container -->
+</div><!-- /specs -->
 
 
 <!--/////////////////////-->
 <!-- FOOTER / CONTACT INFO -->
 <!--/////////////////////-->
 <div class="footer" id="contact"><!-- footer -->
-  <div class="navigation">
-    <strong>Navigation</strong><br />
-      Home<br />
-      Features<br />
-      Specs<br />
-      Contact<br />
-  </div>
-  <div class="help">
-    <strong>Help</strong><br />
-      FAQs<br />
-      Track Your Order<br />
-      Shipping Info<br />
-      Customer Support<br />
-  </div>
-<br class="clear" />
+  <div class="container"><!--container-->
+    <div class="row"><!--row -->
+      <div class="navigation col-lg-2 col-md-2 col-sm-6 col-xs-12"><!-- navigation -->
+        <strong>Navigation</strong><br />
+        <a href="#home">Home</a><br />
+        <a href="#features">Features</a><br />
+        <a href="#how">How It Works</a><br />
+        <a href="#specs">Specs</a><br />
+        <a href="#contact">Contact</a><br />
+      </div><!-- /navigation-->
+      <div class="help col-lg-2 col-md-2 col-sm-6 col-xs-12"> <!--help -->
+        <strong>Help</strong><br />
+        <a href="#">FAQs</a><br />
+        <a href="#">Track Your Order</a><br />
+        <a href="#">Shipping Info</a><br />
+        <a href="#">Customer Support</a><br />
+      </div><!-- /help -->
+    </div><!-- /row -->
+  </div><!-- /container -->
 </div><!-- /footer-->
 
 
