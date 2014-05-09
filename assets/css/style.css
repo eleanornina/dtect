@@ -10,6 +10,7 @@ body, html {
     -o-transition: opacity 200ms;
     transition: opacity 200ms;
 }
+
 .logo:hover {
     opacity: .8;
 }
@@ -22,21 +23,28 @@ body, html {
  FEAUTURES SECTION
 /////////////////////*/
 .moreFeatures {
-    margin-top: -19px;
     width: 100% !important;
     height: 400px;
     background: #154268;
     border-top: 1px solid #E0E0E0;
 }
 
+.moreFeatures ul {
+    color: #ffffff;
+    font-size: 20px;
+    list-style: none;
+    line-height: 35px;
+    padding-top: 30px;
+    font-weight: 400;
+}
+
 .sectionHeader1 {
-    width: 150px;
     height: 120px;
-    margin-left: 86px;
     border: 2px solid #E0E0E0;
     background: #205E8C;
-    margin-top: -2px;
+    margin-top: -20px;
 }
+
 .sectionHeader1 > p {
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;
@@ -44,18 +52,17 @@ body, html {
     padding-left: 12px;
     padding-top: 75px;
     color: #E0E0E0;
+    text-align: center;
 }
 /*/////////////////////
  HOW IT WORKS SECTION
 /////////////////////*/
 
 .sectionHeader2 {
-    width: 215px;
 height: 120px;
-margin-right: 86px;
 border: 2px solid #E0E0E0;
 background: none repeat scroll 0% 0% #205E8C;
-margin-top: -2px;
+margin-top: -20px;
 float: right;
 }
 
@@ -66,6 +73,7 @@ float: right;
     padding-left: 12px;
     padding-top: 75px;
     color: #E0E0E0;
+    text-align: center;
 }
 
 .howItWorks {
