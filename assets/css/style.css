@@ -48,6 +48,24 @@ body, html {
 /*/////////////////////
  HOW IT WORKS SECTION
 /////////////////////*/
+
+.sectionHeader2 {
+    width: 215px;
+    height: 120px;
+    margin-left: 86px;
+    border: 2px solid #E0E0E0;
+    background: none repeat scroll 0% 0% #205E8C;
+    margin-top: -2px;
+}
+.sectionHeader2 > p {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding-left: 12px;
+    padding-top: 75px;
+    color: #E0E0E0;
+}
+
 .howItWorks {
     width: 100%;
     height: 300px;
