@@ -16,8 +16,8 @@ body, html {
     transition: width 0.3s, height .3s;
 }
 .logo.shrink {
-    width: 190px;
-    height: 44px;
+    width: 160px;
+    height: 30px;
     -moz-transition: opacity 200ms;
     -webkit-transition: opacity 200ms;
     -o-transition: opacity 200ms;
@@ -274,7 +274,7 @@ float: right;
 
 .navbar-default .navbar-nav.shrink > li {
     margin-right: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .navbar-default .navbar-nav .shrink > li > a{
     color: #A4A4A4 !important;
@@ -288,7 +288,7 @@ float: right;
 }
 .navbar-default .navbar-nav .shrink > li > a:hover {
         border: 1px solid #154368;
-             color: #154368 !important;
+        color: #154368 !important;
 }
 .navbar-default .navbar-brand .shrink {
     color: #FFF !important;
@@ -308,4 +308,3 @@ float: right;
 .navbar-default .navbar-toggle {
     border-color: #FFF !important;
 }
-

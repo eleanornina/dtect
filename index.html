@@ -40,7 +40,7 @@
       $target = $(target);
 
       $('html, body').stop().animate({
-          'scrollTop': $target.offset().top-112
+          'scrollTop': $target.offset().top-73
       }, 900, '', function () {
           window.location.hash = target-112;
       });
@@ -49,7 +49,7 @@
 </script>
 <script type="text/javascript">
 $(function(){
- var shrinkHeader = 300;
+ var shrinkHeader = 200;
   $(window).scroll(function() {
     var scroll = getCurrentScroll();
       if ( scroll >= shrinkHeader ) {
