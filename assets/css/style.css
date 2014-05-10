@@ -1,7 +1,27 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+html {
+overflow-x: hidden;
+padding: 0 !important;
+background: #fff;
+margin: 0px !important;
+}
 body, html {
     background-color: #E0E0E0 !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 300 !important;
 }
 
+.header-font {
+    font-size: 50px;
+text-align: center;
+line-height: normal;
+vertical-align: baseline;
+margin: 0px;
+padding: 0px;
+float: left;
+line-height: 0px;
+}
 .logo {
     width: 210px;
     height: 77px;
@@ -29,9 +49,92 @@ body, html {
     transition: width 0.3s, height .3s;
 }
 
+
+.no-margin {
+    margin: 0 !important;
+}
+.no-padding {
+    padding: 0 !important;
+}
+.full-img img {
+    width:100%;
+    height: auto;
+}
+.breathe {
+    margin: 50px 0 50px 0;
+}
+.call-to-action-header {
+
+}
+.call-to-action-header h3 {
+    margin-bottom: 10px !important;
+    
+}
+.call-to-action-header p {
+    
+}
 .logo:hover {
     opacity: .8;
 }
+
+
+
+/*/////////////////////
+SERVICES LIST
+/////////////////////*/
+   
+    .services-list {
+        margin-bottom: 30px;
+        list-style: none;     font-family: 'Open Sans', sans-serif !important;
+    }
+    
+    .services-list h4 { margin-bottom: 0;font-size: 20px; }
+    .services-list h4 a { text-decoration: none; }
+    
+    .services-list li {
+        position: relative;
+        min-height: 100px;
+        margin-bottom: 20px;
+    }
+    
+    .services-list li:last-child { margin-bottom: 0; }
+    
+    .services-list li:after {
+        position: absolute;
+        bottom: -10px;
+        left: 24px;
+        height: 50px;
+        border-left: 1px solid #65c5bd;
+        content: "";
+    }
+    
+    .services-list li:last-child:after { border: none; }
+    
+    .services-list li i {
+        float: left;
+        display: block;
+        width: 48px;
+        height: 48px;
+        border: 2px solid #aaaaaa;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        outline: 10px solid transparent;
+        color: #aaaaaa;
+        font-size: 24px; 
+        line-height: 48px;
+        text-align: center;
+        -webkit-transition: background-color 0.3s;
+             -o-transition: background-color 0.3s;
+                transition: background-color 0.3s; 
+    }
+    
+    .services-list .services-list-content { margin-left: 80px; }
+    
+    .services-list li:hover i {
+        border-color: #fff;
+        color: #fff; 
+    }
+
 
 .slider {
     margin-top: 110px;
@@ -44,8 +147,8 @@ body, html {
     width: 100% !important;
     background: #154268;
     border-top: 1px solid #E0E0E0;
-    padding-bottom: 75px;
-    margin-top: -19px;
+    padding: 50px 0 50px 0;
+    background: url(../img/bg.jpg);
 }
 
 .moreFeatures ul {
