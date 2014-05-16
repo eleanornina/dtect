@@ -269,20 +269,24 @@ float: right;
  FOOTER SECTION
 /////////////////////*/
 .footer {
-    background-color: #205E8C !important;
+    background-color: #FFFFFF !important;
     width: 100% !important;
     color: #fff;
-    padding: 50px;
+    background: url(https://managewp.com/wp-content/uploads/2013/11/responsive-blurry-images-wordpress.jpg) center 135px no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .footer a{
-    color: #cbcbcb;
+    color: #FFFFFF;
     font-size: 12px;
     font-style: italic;
 }
 
 .footer a:hover {
-    color: #cbcbcb;
+    color: #FFFFFF;
     opacity: 0.5;
 }
 
@@ -411,3 +415,58 @@ float: right;
 .navbar-default .navbar-toggle {
     border-color: #FFF !important;
 }
+
+
+/*/////////////////////
+SOCIAL FOOTER
+/////////////////////*/
+.social-container {
+  position:relative;
+  margin-top:-75px;
+}
+.social-sub-footer {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 50px !important;
+}
+.social-container .social-footer {
+  text-align:center;
+  background: #FFFFFF;
+  height:75px;
+  padding-top:20px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+     -moz-border-radius: 5px 5px 0px 0px;
+       -o-border-radius: 5px 5px 0px 0px;
+          border-radius: 5px 5px 0px 0px;
+}
+
+.social-container .social-footer i {
+  color: #E0E0E0;
+  font-size:22px;
+  line-height:38px;
+  width:38px;
+  height:38px;
+  margin:0px 4px;
+}
+
+.social-container .social-footer i:hover  {
+  color: #154268;
+}
+
+@media (max-width: 768px) {
+
+  .social-container {
+    position:relative;
+    margin-top:0px;
+    background:#e4545b;
+  }
+  
+  .social-container .social-footer {
+    height:auto;
+    padding:20px 0px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+       -moz-border-radius: 0px 0px 0px 0px;
+         -o-border-radius: 0px 0px 0px 0px;
+            border-radius: 0px 0px 0px 0px;
+  }
+
+}  
