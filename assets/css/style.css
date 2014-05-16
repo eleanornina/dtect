@@ -70,7 +70,16 @@ line-height: 0px;
 .logo:hover {
     opacity: .8;
 }
+.hero-unit {
 
+}
+.hero-unit h1 {
+    margin: 40px 0 40px 0;
+    text-align: center;
+    font-weight: 300;
+    color: #fff;
+        list-style: none;     font-family: 'Open Sans', sans-serif !important;
+}
 
 
 /*/////////////////////
