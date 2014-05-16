@@ -348,12 +348,12 @@ float: right;
 .howItWorks {
     width: 100%;
     height: auto;
-    background: url('../img/HoldingPhone.png');
-     -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-    padding-bottom: 75px;
+    background: url('../img/HoldingPhone.png')fixed 100% center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 75px 0 75px 0;
 }
 .howItWorks p {
     color: #fff;
