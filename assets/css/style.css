@@ -70,7 +70,16 @@ line-height: 0px;
 .logo:hover {
     opacity: .8;
 }
+.hero-unit {
 
+}
+.hero-unit h1 {
+    margin: 40px 0 40px 0;
+    text-align: center;
+    font-weight: 300;
+    color: #fff;
+        list-style: none;     font-family: 'Open Sans', sans-serif !important;
+}
 
 
 /*/////////////////////
@@ -685,13 +694,9 @@ MEDIA QUERIES
         0px 8px 13px rgba(0,0,0,0.1),
         0px 18px 23px rgba(0,0,0,0.1);
 }
-}
 
-@media all and (max-width: 960px){
-  
-}
-@media all and (max-width: 480px){
-  .first {
-    width: 70%;
-  }
+.ping {
+    width: 100px;
+    height: 100px;
+    background: red;
 }
