@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,7 +25,6 @@
     <link href="assets/css/font-awesome.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -32,143 +32,161 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('a[href^="#"]').on('click',function (e) {
-      e.preventDefault();
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+                var target = this.hash,
+                    $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top - 85
+                }, 900, '', function () {
+                    window.location.hash = target;
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(function () {
+            var shrinkHeader = 200;
+            $(window).scroll(function () {
+                var scroll = getCurrentScroll();
+                if (scroll >= shrinkHeader) {
+                    $('.navbar-header').addClass('shrink');
+                    $('.navbar-default .navbar-nav').addClass('shrink');
+                    $('.logo').addClass('shrink');
+                } else {
+                    $('.navbar-header').removeClass('shrink');
+                    $('.navbar-default .navbar-nav').removeClass('shrink');
+                    $('.logo').removeClass('shrink');
+                }
+            });
 
-      var target = this.hash,
-      $target = $(target);
-
-      $('html, body').stop().animate({
-          'scrollTop': $target.offset().top-85
-      }, 900, '', function () {
-          window.location.hash = target;
-      });
-    });
-  });
-</script>
-<script type="text/javascript">
-$(function(){
- var shrinkHeader = 200;
-  $(window).scroll(function() {
-    var scroll = getCurrentScroll();
-      if ( scroll >= shrinkHeader ) {
-           $('.navbar-header').addClass('shrink');
-           $('.navbar-default .navbar-nav').addClass('shrink');
-           $('.logo').addClass('shrink');
-        }
-        else {
-            $('.navbar-header').removeClass('shrink');
-            $('.navbar-default .navbar-nav').removeClass('shrink');
-            $('.logo').removeClass('shrink');
-        }
-  });
-function getCurrentScroll() {
-    return window.pageYOffset || document.documentElement.scrollTop;
-    }
-});
-</script>
+            function getCurrentScroll() {
+                return window.pageYOffset || document.documentElement.scrollTop;
+            }
+        });
+    </script>
 </head>
 
 <body>
-<!--/////////////////////-->
-<!-- HEADER -->
-<!--/////////////////////-->
-<!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-        <a class="navbar-brand" href="#home"><img src="assets/img/logo.svg" class="logo"></a>
-    </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#features">Features</a></li>
-        <!--<li><a href="#how">How it Works</a></li>-->
-        <li><a href="#specs">Specs</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div>
-</div>
-<!--/////////////////////-->
-<!-- SLIDER -->
-<!--/////////////////////-->
-<div class="slider" id="home">
-<div id="showcase" class="showcase" style="width: 100%;">
-  <!-- Each child div in #showcase represents a slide -->
-  <div class="showcase-slide">
-    <!-- Put the slide content in a div with the class .showcase-content. -->
-    <div class="showcase-content">
-      <!-- If the slide contains multiple elements you should wrap them in a div with the class .showcase-content-wrapper. -->
-      <div class="showcase-content-wrapper">
-        <!-- As for dynamic height you need to set the width and height of images in the source for viewline to work. -->
-        <div class="slide1">
-          <img src="assets/img/screen1.png" width="500px" height="403px" class="screen1">
-          <div class="tagline">
-            <p class="tagline1">An average person spends <span>3,680 hours</span>, or<br> <span>153 days</span> looking for lost or stolen items.</p>
-            <p class="tagline2">We're here to fix that.</p>
-          </div>
+    <!--/////////////////////-->
+    <!-- HEADER -->
+    <!--/////////////////////-->
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#home">
+                    <img src="assets/img/logo.svg" class="logo">
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home">Home</a>
+                    </li>
+                    <li><a href="#features">Features</a>
+                    </li>
+                    <!--<li><a href="#how">How it Works</a></li>-->
+                    <li><a href="#specs">Specs</a>
+                    </li>
+                    <li><a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
         </div>
-      </div>
     </div>
-    <!-- Put the thumbnail content in a div with the class .showcase-thumbnail -->
-  </div>
-  <!-- Each child div in #showcase represents a slide -->
-  <div class="showcase-slide">
-    <div class="showcase-content">
-      <div class="showcase-content-wrapper">
-        <div class="slide2">
-            <div class="sticker"><img src="assets/img/sticker.png"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Each child div in #showcase represents a slide -->
-  <div class="showcase-slide">
-    <div class="showcase-content">
-      <div class="showcase-content-wrapper">
-        <div class="slide3">
-        <div class="screen2"><img src="http://placehold.it/300x375"></div>
-        <div class="bottom"><p class="screenshotInfo">Yo this is some info on dat screenshot mane ya feeeel mee? Gabe Newell is the best in life. Shrek is love. Shrek is life.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Each child div in #showcase represents a slide -->
-  <div class="showcase-slide">
-    <div class="showcase-content">
-      <div class="showcase-content-wrapper">
-        <div class="slide4">
-        <div class="screen3"><img src="http://placehold.it/300x375"></div>
-        <div class="bottom"><p class="screenshotInfo">Yo this is some info on dat screenshot mane ya feeeel mee? Gabe Newell is the best in life. Shrek is love. Shrek is life.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Each child div in #showcase represents a slide -->
-  <div class="showcase-slide">
-    <div class="showcase-content">
-      <div class="showcase-content-wrapper">
-        <div class="slide5">
-            <div class="final">
-              <img src="assets/img/logoInvert.svg" class="logoInvert">
-              <a class="more" href="#features"><div class="morebutton">Discover more.</div></a>
+    <!--/////////////////////-->
+    <!-- SLIDER -->
+    <!--/////////////////////-->
+    <div class="slider" id="home">
+        <div id="showcase" class="showcase" style="width: 100%;">
+            <!-- Each child div in #showcase represents a slide -->
+            <div class="showcase-slide">
+                <!-- Put the slide content in a div with the class .showcase-content. -->
+                <div class="showcase-content">
+                    <!-- If the slide contains multiple elements you should wrap them in a div with the class .showcase-content-wrapper. -->
+                    <div class="showcase-content-wrapper">
+                        <!-- As for dynamic height you need to set the width and height of images in the source for viewline to work. -->
+                        <div class="slide1">
+                            <img src="assets/img/screen1.png" width="500px" height="403px" class="screen1">
+                            <div class="tagline">
+                                <p class="tagline1">An average person spends <span>3,680 hours</span>, or
+                                    <br> <span>153 days</span> looking for lost or stolen items.</p>
+                                <p class="tagline2">We're here to fix that.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Put the thumbnail content in a div with the class .showcase-thumbnail -->
+            </div>
+            <!-- Each child div in #showcase represents a slide -->
+            <div class="showcase-slide">
+                <div class="showcase-content">
+                    <div class="showcase-content-wrapper">
+                        <div class="slide2">
+                            <div class="sticker">
+                                <img src="assets/img/sticker.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Each child div in #showcase represents a slide -->
+            <div class="showcase-slide">
+                <div class="showcase-content">
+                    <div class="showcase-content-wrapper">
+                        <div class="slide3">
+                            <div class="screen2">
+                                <img src="http://placehold.it/300x375">
+                            </div>
+                            <div class="bottom">
+                                <p class="screenshotInfo">Yo this is some info on dat screenshot mane ya feeeel mee? Gabe Newell is the best in life. Shrek is love. Shrek is life.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Each child div in #showcase represents a slide -->
+            <div class="showcase-slide">
+                <div class="showcase-content">
+                    <div class="showcase-content-wrapper">
+                        <div class="slide4">
+                            <div class="screen3">
+                                <img src="http://placehold.it/300x375">
+                            </div>
+                            <div class="bottom">
+                                <p class="screenshotInfo">Yo this is some info on dat screenshot mane ya feeeel mee? Gabe Newell is the best in life. Shrek is love. Shrek is life.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Each child div in #showcase represents a slide -->
+            <div class="showcase-slide">
+                <div class="showcase-content">
+                    <div class="showcase-content-wrapper">
+                        <div class="slide5">
+                            <div class="final">
+                                <img src="assets/img/logoInvert.svg" class="logoInvert">
+                                <a class="more" href="#features">
+                                    <div class="morebutton">Discover more.</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
     </div>
-  </div>
-</div>
-</div>
 
 <!--/////////////////////-->
 <!-- CALL TO ACTION -->
@@ -185,88 +203,102 @@ function getCurrentScroll() {
       <div class="col-sm-3 header-font"><i class="fa fa-clock-o"></i></div>
       <div class="col-sm-9 no-padding no-margin">
         <h3 class="no-margin">Save Time</h3>
-        <p>If an item gets lost, use the app to quickly detect your item quickly and save time.</p></div>
+        <p>If an item gets lost, use the app to quickly detect your item and save time.</p></div>
     </div>
     <div class="col-sm-4">
       <div class="col-sm-3 header-font"><i class="fa fa-lock"></i></div>
       <div class="col-sm-9 no-padding no-margin">
         <h3 class="no-margin">Feel Secure</h3>
         <p>With our app, you have the control of knowing where your items are.</p></div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
+    <!--/////////////////////-->
+    <!-- FEAUTURES -->
+    <!--/////////////////////-->
+    <div class="moreFeatures" id="features">
+        <!-- moreFeatures -->
 
-<!--/////////////////////-->
-<!-- FEAUTURES -->
-<!--/////////////////////-->
-<div class="moreFeatures" id="features"> <!-- moreFeatures -->
+        <div class="container">
+            <!-- container -->
 
-  <div class="container"> <!-- container -->
+            <div class="col-sm-8">
 
+                <ul class="services-list">
+                    <li>
 
-<div class="col-sm-8">
+                        <i class="fa fa-heart"></i>
 
-                    <ul class="services-list">
-                        <li>
-                            
-                            <i class="fa fa-heart"></i>
-                            
-                            <div class="services-list-content">
-                                <h4>
+                        <div class="services-list-content">
+                            <h4>
                                   <a href="#">See Through Walls - Literally</a>
                                 </h4>
-                                <p>Innovative built-in technology allows you to see through surfaces with your smartphone's camera to find your misplaced items, fast.</p>
-                            </div><!-- end .process-builder-1-content -->
-                            
-                        </li>
-                        <li>
-                            
-                            <i class="fa fa-users"></i>
-                            
-                            <div class="services-list-content">
-                                <h4>
-                                  <a href="#">Strength in Numbers</a>
-                                </h4>
-                                <p>Seriously cannot find an item? Items that are lost and out of range can be picked up by other users' so you can find your lost items.</p>
-                            </div><!-- end .process-builder-1-content -->
-                            
-                        </li>
-                        <li>
-                            
-                            <i class="fa fa-cog"></i>
-                            
-                            <div class="services-list-content">
-                                <h4>
+                            <p>Innovative built-in technology allows you to see through surfaces with your smartphone's camera to find your misplaced items, fast.</p>
+                        </div>
+                        <!-- end .process-builder-1-content -->
+
+                    </li>
+                    <li>
+
+                        <i class="fa fa-users"></i>
+
+                        <div class="services-list-content">
+                            <h4>
+                              <a href="#">Strength in Numbers</a>
+                            </h4>
+                            <p>Seriously cannot find an item? Items that are lost and out of range can be picked up by other users' so you can find your lost items.</p>
+                        </div>
+                        <!-- end .process-builder-1-content -->
+                    </li>
+                    <li>
+
+                        <i class="fa fa-cog"></i>
+
+                        <div class="services-list-content">
+                            <h4>
                                   <a href="#">Personalized Statistics</a>
                                 </h4>
-                                <p>Our application is also configured to collect data based on your lost item, where you found it, and at what time.</p>
-                            </div><!-- end .process-builder-1-content -->
-                            
-                        </li>
-                    </ul>
-</div>
-<div class="col-sm-4 full-img" style='padding-top:20px;'>
-  <img src="http://placehold.it/100x100" alt="">
-</div>
-  </div> <!-- /container -->
-</div><!-- moreFeatures -->
+                            <p>Our application is also configured to collect data based on your lost item, where you found it, and at what time.</p>
+                        </div>
+                        <!-- end .process-builder-1-content -->
 
-<!--/////////////////////-->
-<!-- HOW IT WORKS -->
-<!--/////////////////////-->
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-4 full-img" style='padding-top:20px;'>
+                <img src="http://placehold.it/100x100" alt="">
+            </div>
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- moreFeatures -->
 
-<div class="howItWorks" id="how"> <!-- howItWorks -->
-  <div class="container"> <!-- container -->
-    <div class="row"> <!-- row -->
-      <div class="sectionHeader2 col-lg-3 col-lg-offset-9 col-md-3  col-md-offset-9 col-sm-4 col-sm-offset-8 col-xs-12"> <!--sectionHeader2-->
-        <p class="howItWorksTitle">Too much text beyond this point, lets talk about it.</p>
-      </div><!-- /sectionHeader2 -->
-    </div><!-- /row -->
-    <div class="row"> <!-- row -->
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"> <!-- column -->
-        <i class="fa fa-plus-square"></i><br />
-        <h3>Attach Your dtectors</h1>
+    <!--/////////////////////-->
+    <!-- HOW IT WORKS -->
+    <!--/////////////////////-->
+
+    <div class="howItWorks" id="how">
+        <!-- howItWorks -->
+        <div class="container">
+            <!-- container -->
+            <div class="row">
+                <!-- row -->
+                <div class="sectionHeader2 col-lg-3 col-lg-offset-9 col-md-3  col-md-offset-9 col-sm-4 col-sm-offset-8 col-xs-12">
+                    <!--sectionHeader2-->
+                    <p class="howItWorksTitle">Too much text beyond this point, lets talk about it.</p>
+                </div>
+                <!-- /sectionHeader2 -->
+            </div>
+            <!-- /row -->
+            <div class="row">
+                <!-- row -->
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <!-- column -->
+                    <i class="fa fa-plus-square"></i>
+                    <br />
+                    <h3>Attach Your dtectors</h1>
         <p>Place your color-coded dtector sticker on your item (keys, phone, laptop, wallet) and register that item to your application.</p>
       </div>
 
@@ -303,79 +335,125 @@ function getCurrentScroll() {
 
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"> <!-- column -->
         <h3>Included ($30)</h3>
-        <ul>
-          <li>Customer Account</li>
-          <li>5 Dtector Stickers</li>
-          <li>Item Location via Phone or Desktop Application</li>
-          <li>Basic Statistics Based on your Activity</li>
-        </ul>
-      </div> <!-- /column -->
+                    <ul>
+                        <li>Customer Account</li>
+                        <li>5 Dtector Stickers</li>
+                        <li>Item Location via Phone or Desktop Application</li>
+                        <li>Basic Statistics Based on your Activity</li>
+                    </ul>
+                </div>
+                <!-- /column -->
 
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"> <!-- column -->
-        <h3>ProTools ($45)</h3>
-        <ul>
-          <li>Customer Account</li>
-          <li>5 Dtector Stickers</li>
-          <li>Item Location via Phone or Desktop Application</li>
-          <li>Premium Statistics Based on your Activity</li>
-          <li>Item Dtector for Lost/Stolen items via Wireless Network</li>
-        </ul>
-      </div> <!-- /column -->
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <!-- column -->
+                    <h3>ProTools ($45)</h3>
+                    <ul>
+                        <li>Customer Account</li>
+                        <li>5 Dtector Stickers</li>
+                        <li>Item Location via Phone or Desktop Application</li>
+                        <li>Premium Statistics Based on your Activity</li>
+                        <li>Item Dtector for Lost/Stolen items via Wireless Network</li>
+                    </ul>
+                </div>
+                <!-- /column -->
 
-    </div> <!-- /row -->
-  </div><!-- /container -->
-</div><!-- /specs -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /specs -->
 
+    <!--/////////////////////-->
+    <!-- FOOTER / CONTACT INFO -->
+    <!--/////////////////////-->
 
-<!--/////////////////////-->
-<!-- FOOTER / CONTACT INFO -->
-<!--/////////////////////-->
-<div class="footer" id="contact"><!-- footer -->
-  <div class="container"><!--container-->
-    <div class="row"><!--row -->
-      <div class="navigation col-lg-2 col-md-2 col-sm-6 col-xs-12"><!-- navigation -->
-        <strong>Navigation</strong><br />
-        <a href="#home">Home</a><br />
-        <a href="#features">Features</a><br />
-        <!--<a href="#how">How It Works</a><br />-->
-        <a href="#specs">Specs</a><br />
-        <a href="#contact">Contact</a><br />
-      </div><!-- /navigation-->
-      <div class="help col-lg-2 col-md-2 col-sm-6 col-xs-12"> <!--help -->
-        <strong>Help</strong><br />
-        <a href="#">FAQs</a><br />
-        <a href="#">Track Your Order</a><br />
-        <a href="#">Shipping Info</a><br />
-        <a href="#">Customer Support</a><br />
-      </div><!-- /help -->
-    </div><!-- /row -->
-  </div><!-- /container -->
-</div><!-- /footer-->
+    <div class="social-container">
+        <div class="container no-padding">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="social-footer">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-tumblr"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="footer" id="contact">
+        <!-- footer -->
+        <div class="container social-sub-footer">
+            <!--container-->
+            <div class="row">
+                <!--row -->
+                <div class="navigation col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                    <!-- navigation -->
+                    <strong>Navigation</strong>
+                    <br />
+                    <a href="#home">Home</a>
+                    <br />
+                    <a href="#features">Features</a>
+                    <br />
+                    <!--<a href="#how">How It Works</a><br />-->
+                    <a href="#specs">Specs</a>
+                    <br />
+                    <a href="#contact">Contact</a>
+                    <br />
+                </div>
+                <!-- /navigation-->
+                <div class="help col-lg-2 col-md-2 col-sm-6 col-xs-12">
+                    <!--help -->
+                    <strong>Help</strong>
+                    <br />
+                    <a href="#">FAQs</a>
+                    <br />
+                    <a href="#">Track Your Order</a>
+                    <br />
+                    <a href="#">Shipping Info</a>
+                    <br />
+                    <a href="#">Customer Support</a>
+                    <br />
+                </div>
+                <!-- /help -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /footer-->
 
-
-<!-- Bootstrap core JavaScript
+    <!-- Bootstrap core JavaScript
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script type="text/javascript" src="assets/js/showcase.js"></script>
-<script type="text/javascript" src="assets/js/slider.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-  $(this).find('.showcase-content-container').stop().delay(300).animate({height: 'toggle'});
-  $(this).find('.screen1').delay(750).fadeIn(350);
-  $(this).find('.tagline1').delay(1000).fadeIn(500);
-  $(this).find('.tagline2').delay(1100).fadeIn(1000);
-});
-
-$(function nextButton () {
-$('.showcase-arrow-next').one('click', function(e) {
-  $('.sticker').delay(500).fadeIn('normal');
-  $('.screen2, .screen3').delay(1000).animate({height: 'toggle'});
-  $('.bottom, .bottom2').delay(1300).animate({height: 'toggle'});
-  $('.screenshotInfo').delay(2000).fadeIn('normal');
-});
-});
-</script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="assets/js/showcase.js"></script>
+    <script type="text/javascript" src="assets/js/slider.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(this).find('.showcase-content-container').stop().delay(300).animate({
+                height: 'toggle'
+            });
+            $(this).find('.screen1').delay(750).fadeIn(350);
+            $(this).find('.tagline1').delay(1000).fadeIn(500);
+            $(this).find('.tagline2').delay(1100).fadeIn(1000);
+        });
+        $(function nextButton() {
+            $('.showcase-arrow-next').one('click', function (e) {
+                $('.sticker').delay(500).fadeIn('normal');
+                $('.screen2, .screen3').delay(1000).animate({
+                    height: 'toggle'
+                });
+                $('.bottom, .bottom2').delay(1300).animate({
+                    height: 'toggle'
+                });
+                $('.screenshotInfo').delay(2000).fadeIn('normal');
+            });
+        });
+    </script>
 </body>
+
 </html>
