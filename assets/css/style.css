@@ -345,7 +345,7 @@ float: right;
     text-align: center;
 }
 
-.specs {
+.howItWorks {
     width: 100%;
     height: auto;
     background: url('../img/HoldingPhone.png');
@@ -367,6 +367,7 @@ float: right;
 
 /*/////////////////////
  SPECS SECTION
+ /////////////////////*/
 .specs {
     width: 100%;
     padding-bottom: 75px;
@@ -377,13 +378,13 @@ float: right;
 .specs p {
     padding-top: 30px;
 }
-/////////////////////*/
+
 
 .specs ul {
     list-style: none;
 }
 
-/*.sectionHeader3 {
+.sectionHeader3 {
     height: 120px;
     border: 2px solid #cbcbcb;
     background: #205E8C;
