@@ -365,6 +365,15 @@ float: right;
     color: #154268 !important;
 }
 
+.howItWorks i {
+display: inline;
+width: 48px;
+height: 48px;
+color: #fff;
+font-size: 24px;
+text-align: center;
+}
+
 /*/////////////////////
  SPECS SECTION
  /////////////////////*/
@@ -418,10 +427,9 @@ float: right;
  FOOTER SECTION
 /////////////////////*/
 .footer {
-    background-color: #FFFFFF !important;
+    background-color: #999 !important;
     width: 100% !important;
     color: #fff;
-    background: url(https://managewp.com/wp-content/uploads/2013/11/responsive-blurry-images-wordpress.jpg) center 135px no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
