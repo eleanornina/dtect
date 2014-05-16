@@ -180,14 +180,14 @@ SERVICES LIST
  HOW IT WORKS SECTION
 /////////////////////*/
 
-.sectionHeader2 {
+.sectionHeader3 {
 height: 120px;
 border: 2px solid #154268;
 background: none repeat scroll 0% 0% #E0E0E0;
 margin-top: -20px;
 float: right;
 }
-.sectionHeader2::after {
+.sectionHeader3::after {
   content:"\00A0";
   display: block;
   position: absolute;
@@ -201,7 +201,7 @@ float: right;
   border-color: transparent #E0E0E0 transparent transparent;
 }
 
-.sectionHeader2 > p {
+.sectionHeader3 > p {
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -211,7 +211,7 @@ float: right;
     text-align: center;
 }
 
-.howItWorks {
+.specs {
     width: 100%;
     background: #cbcbcb;
     padding-bottom: 75px;
@@ -219,7 +219,6 @@ float: right;
 
 /*/////////////////////
  SPECS SECTION
-/////////////////////*/
 .specs {
     width: 100%;
     padding-bottom: 75px;
@@ -230,12 +229,13 @@ float: right;
 .specs p {
     padding-top: 30px;
 }
+/////////////////////*/
 
 .specs ul {
     list-style: none;
 }
 
-.sectionHeader3 {
+/*.sectionHeader3 {
     height: 120px;
     border: 2px solid #cbcbcb;
     background: #205E8C;
@@ -263,7 +263,7 @@ float: right;
     padding-top: 75px;
     color: #E0E0E0;
     text-align: center;
-}
+}*/
 
 /*/////////////////////
  FOOTER SECTION
