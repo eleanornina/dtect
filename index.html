@@ -22,6 +22,8 @@
 
     <!-- Font Awesome -->
     <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
 
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -49,7 +51,7 @@
 </script>
 <script type="text/javascript">
 $(function(){
- var shrinkHeader = 10;
+ var shrinkHeader = 200;
   $(window).scroll(function() {
     var scroll = getCurrentScroll();
       if ( scroll >= shrinkHeader ) {
@@ -90,7 +92,7 @@ function getCurrentScroll() {
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#home">Home</a></li>
         <li><a href="#features">Features</a></li>
-        <li><a href="#how">How it Works</a></li>
+        <!--<li><a href="#how">How it Works</a></li>-->
         <li><a href="#specs">Specs</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -109,7 +111,13 @@ function getCurrentScroll() {
       <!-- If the slide contains multiple elements you should wrap them in a div with the class .showcase-content-wrapper. -->
       <div class="showcase-content-wrapper">
         <!-- As for dynamic height you need to set the width and height of images in the source for viewline to work. -->
-        <img src="assets/img/01.jpg" alt="01" width="700px" height="470px" />
+        <div class="slide1">
+          <img src="assets/img/screen1.png" width="500px" height="403px" class="screen1">
+          <div class="tagline">
+            <p class="tagline1">An average person spends <span>3,680 hours</span>, or<br> <span>153 days</span> looking for lost or stolen items.</p>
+            <p class="tagline2">We're here to fix that.</p>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Put the thumbnail content in a div with the class .showcase-thumbnail -->
@@ -118,7 +126,9 @@ function getCurrentScroll() {
   <div class="showcase-slide">
     <div class="showcase-content">
       <div class="showcase-content-wrapper">
-        <img src="assets/img/02.jpg" alt="02" width="700px" height="470px" />
+        <div class="slide2">
+            <div class="sticker"><img src="assets/img/sticker.png"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -126,8 +136,10 @@ function getCurrentScroll() {
   <div class="showcase-slide">
     <div class="showcase-content">
       <div class="showcase-content-wrapper">
-        <img src="assets/img/03.jpg" alt="03" width="700px" height="470px" />
-        <p class="static-caption">Yep, this is also a static caption for this image.</p>
+        <div class="slide3">
+        <div class="screen2"><img src="http://placehold.it/300x375"></div>
+        <div class="bottom"><p class="screenshotInfo">Yo this is some info on dat screenshot mane ya feeeel mee? Gabe Newell is the best in life. Shrek is love. Shrek is life.</p></div>
+        </div>
       </div>
     </div>
   </div>
@@ -135,7 +147,10 @@ function getCurrentScroll() {
   <div class="showcase-slide">
     <div class="showcase-content">
       <div class="showcase-content-wrapper">
-        <img src="assets/img/04.jpg" alt="04" width="579px" />
+        <div class="slide4">
+        <div class="screen3"><img src="http://placehold.it/300x375"></div>
+        <div class="bottom"><p class="screenshotInfo">Yo this is some info on dat screenshot mane ya feeeel mee? Gabe Newell is the best in life. Shrek is love. Shrek is life.</p></div>
+        </div>
       </div>
     </div>
   </div>
@@ -143,15 +158,12 @@ function getCurrentScroll() {
   <div class="showcase-slide">
     <div class="showcase-content">
       <div class="showcase-content-wrapper">
-        <img src="assets/img/06.jpg" alt="07" width="700px" height="470px" />
-      </div>
-    </div>
-  </div>
-  <!-- Each child div in #showcase represents a slide -->
-  <div class="showcase-slide">
-    <div class="showcase-content">
-      <div class="showcase-content-wrapper">
-        <img src="assets/img/05.jpg" alt="05" width="700px" />
+        <div class="slide5">
+            <div class="final">
+              <img src="assets/img/logoInvert.svg" class="logoInvert">
+              <a class="more" href="#features"><div class="morebutton">Discover more.</div></a>
+            </div>
+        </div>
       </div>
     </div>
   </div>
@@ -198,7 +210,7 @@ function getCurrentScroll() {
                                 <h4>
                                   <a href="#">See Through Walls - Literally</a>
                                 </h4>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                                <p>Innovative built-in technology allows you to see through surfaces with your smartphone's camera to find your misplaced items, fast.</p>
                             </div><!-- end .process-builder-1-content -->
                             
                         </li>
@@ -208,9 +220,9 @@ function getCurrentScroll() {
                             
                             <div class="services-list-content">
                                 <h4>
-                                  <a href="#">Numbers are strength</a>
+                                  <a href="#">Strength in Numbers</a>
                                 </h4>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium </p>
+                                <p>Seriously cannot find an item? Items that are lost and out of range can be picked up by other users' so you can find your lost items.</p>
                             </div><!-- end .process-builder-1-content -->
                             
                         </li>
@@ -220,9 +232,9 @@ function getCurrentScroll() {
                             
                             <div class="services-list-content">
                                 <h4>
-                                  <a href="#">Always works</a>
+                                  <a href="#">Personalized Statistics</a>
                                 </h4>
-                                <p>Perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                                <p>Our application is also configured to collect data based on your lost item, where you found it, and at what time.</p>
                             </div><!-- end .process-builder-1-content -->
                             
                         </li>
@@ -237,11 +249,12 @@ function getCurrentScroll() {
 <!--/////////////////////-->
 <!-- HOW IT WORKS -->
 <!--/////////////////////-->
+
 <div class="howItWorks" id="how"> <!-- howItWorks -->
   <div class="container"> <!-- container -->
     <div class="row"> <!-- row -->
       <div class="sectionHeader2 col-lg-3 col-lg-offset-9 col-md-3  col-md-offset-9 col-sm-4 col-sm-offset-8 col-xs-12"> <!--sectionHeader2-->
-        <p>Too much text beyond this point, lets talk about it.</p>
+        <p class="howItWorksTitle">Too much text beyond this point, lets talk about it.</p>
       </div><!-- /sectionHeader2 -->
     </div><!-- /row -->
     <div class="row"> <!-- row -->
@@ -249,22 +262,22 @@ function getCurrentScroll() {
         <i class="fa fa-plus-square"></i><br />
         <h3>Attach Your dtectors</h1>
         <p>Place your color-coded dtector sticker on your item (keys, phone, laptop, wallet) and register that item to your application.</p>
-      </div> <!-- /column -->
+      </div>
 
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"> <!-- column -->
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
         <i class="fa fa-bullseye"></i><br />
         <h3>Start Searching</h1>
         <p>Begin the search for your lost item by clicking on the item and then pressing "Find."  You will then be presented with a compass and a distance that will lead you to your lost item.</p>
-      </div> <!-- /column -->
+      </div>
 
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"> <!-- column -->
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
         <i class="fa fa-map-marker"></i><br />
         <h3>Retrieve Your Items</h1>
         <p>As you approach your item, the indicator sound will begin to beep faster until you are within 5 inches of your item.  Once located, click the "Found" button on the application</p>
-      </div> <!-- /column -->
-    </div> <!-- /row -->
-  </div> <!-- container -->
-</div> <!--howItWorks -->
+      </div>
+    </div> 
+  </div>
+</div>
 
 <!--/////////////////////-->
 <!-- SPECS -->
@@ -336,7 +349,7 @@ function getCurrentScroll() {
         <strong>Navigation</strong><br />
         <a href="#home">Home</a><br />
         <a href="#features">Features</a><br />
-        <a href="#how">How It Works</a><br />
+        <!--<a href="#how">How It Works</a><br />-->
         <a href="#specs">Specs</a><br />
         <a href="#contact">Contact</a><br />
       </div><!-- /navigation-->
@@ -359,5 +372,22 @@ function getCurrentScroll() {
 <script type="text/javascript" src="assets/js/showcase.js"></script>
 <script type="text/javascript" src="assets/js/slider.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+  $(this).find('.showcase-content-container').stop().delay(300).animate({height: 'toggle'});
+  $(this).find('.screen1').delay(750).fadeIn(350);
+  $(this).find('.tagline1').delay(1000).fadeIn(500);
+  $(this).find('.tagline2').delay(1100).fadeIn(1000);
+});
+
+$(function nextButton () {
+$('.showcase-arrow-next').one('click', function(e) {
+  $('.sticker').delay(500).fadeIn('normal');
+  $('.screen2, .screen3').delay(1000).animate({height: 'toggle'});
+  $('.bottom, .bottom2').delay(1300).animate({height: 'toggle'});
+  $('.screenshotInfo').delay(2000).fadeIn('normal');
+});
+});
+</script>
 </body>
 </html>
