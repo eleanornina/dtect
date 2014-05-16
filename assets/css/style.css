@@ -3,7 +3,6 @@
 html {
 overflow-x: hidden;
 padding: 0 !important;
-background: #fff;
 margin: 0px !important;
 }
 body, html {
@@ -25,15 +24,11 @@ line-height: 0px;
 .logo {
     width: 210px;
     height: 77px;
-    -moz-transition: opacity 200ms;
-    -webkit-transition: opacity 200ms;
-    -o-transition: opacity 200ms;
-    transition: opacity 200ms;
-    -webkit-transition: width 0.3s, height .3s;
-    -moz-transition: width 0.3s, height .3s;
-    -ms-transition: width 0.3s, height .3s;
-    -o-transition: width 0.3s, height .3s;
-    transition: width 0.3s, height .3s;
+    -webkit-transition: width 0.3s, height .3s, opacity .3s;
+    -moz-transition: width 0.3s, height .3s, opacity .3s;
+    -ms-transition: width 0.3s, height .3s, opacity .3s;
+    -o-transition: width 0.3s, height .3s, opacity .3s;
+    transition: width 0.3s, height .3s, opacity .3s;
 }
 .logo.shrink {
     width: 160px;
@@ -48,7 +43,6 @@ line-height: 0px;
     -o-transition: width 0.3s, height .3s;
     transition: width 0.3s, height .3s;
 }
-
 
 .no-margin {
     margin: 0 !important;
@@ -135,9 +129,150 @@ SERVICES LIST
         color: #fff; 
     }
 
+/*/////////////////////
+ SLIDER
+/////////////////////*/
 
 .slider {
     margin-top: 110px;
+}
+.slide1 {
+    padding-top: 20px;
+    width: 1300px;
+    height: 465px;
+}
+.screen1{
+    display: none;
+}
+.tagline {
+    width: 500px;
+    float: right;
+    height: 400px;
+    margin-right: 100px;
+}
+.tagline1 {
+    text-align: left;
+    font-size: 35px;
+    font-weight: bold;
+    width: 500px;
+    color: #d3d3d3;
+    line-height: 45px;
+    display: none;
+}
+.tagline span {
+    text-align: left;
+    font-size: 50px;
+    font-weight: bolder;
+    line-height: 45px;
+    color: #f1f1f1;
+    text-shadow: 4px 3px 0px #154268, 7px 6px 0px rgba(0,0,0,0.1);
+}
+.tagline2 {
+    padding-top: 120px;
+    font-size: 45px;
+    font-weight: bolder;
+    text-align: left;
+    font-weight: bold;
+    color: #f1f1f1;
+    display: none;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+}
+.slide2 {
+    width: 600px;
+    height: 470px;
+    background: #2570a6;
+    border-left: 1px solid #194f77;
+}
+.sticker {
+    width: 450px;
+    height: 400px;
+    background: src('assets/img/test.png');
+    margin-left: 58px;
+    padding-top: 20px;
+    display: none;
+}
+
+.slide3 {
+    width: 600px;
+    height: 470px;
+    background: #267ab5;
+}
+.screen2 {
+    padding-top: 20px;
+    display: none;
+}
+.bottom {
+    width: 600px;
+    height: 70px;
+    background: #2570a6;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+.slide4 {
+    width: 600px;
+    height: 470px;
+    background: #267ab5;
+    border-left: 1px solid #206ca0;
+}
+.screen3 {
+    padding-top: 20px;
+    display: none;
+}
+.bottom2 {
+    width: 600px;
+    height: 70px;
+    background: #267ab5;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+.screenshotInfo {
+    padding: 14px 60px 0px 60px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #f1f1f1;
+    display: none;
+}
+.slide5 {
+    width: 600px;
+    height: 470px;
+    background: #2570a6;
+}
+
+.logoInvert {
+    width: 300px;
+    height: 120px;
+    margin-left: 37px;
+    margin-top: 100px;
+}
+.morebutton {
+    width: 200px;
+    height: 65px;
+    background: #2570a6;
+    margin: 0 auto;
+    margin-top: 30px;
+    line-height: 65px;
+    border: 1px solid #E0E0E0;
+    color: #E0E0E0;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    transition: background 200ms, color 200ms, width 200ms, border-radius 200ms;
+}
+.morebutton:hover {
+    width: 220px;
+    background: #E0E0E0;
+    color: #1a4e74;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+a:hover {
+    text-decoration: none !important;
 }
 
 /*/////////////////////
@@ -148,7 +283,6 @@ SERVICES LIST
     background: #154268;
     border-top: 1px solid #E0E0E0;
     padding: 50px 0 50px 0;
-    background: url(../img/bg.jpg);
 }
 
 .moreFeatures ul {
@@ -213,8 +347,22 @@ float: right;
 
 .specs {
     width: 100%;
-    background: #cbcbcb;
+    height: auto;
+    background: url('../img/HoldingPhone.png');
+     -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
     padding-bottom: 75px;
+}
+.howItWorks p {
+    color: #fff;
+}
+.howItWorks h3 {
+    color: #fff;
+}
+.howItWorksTitle {
+    color: #154268 !important;
 }
 
 /*/////////////////////
@@ -321,7 +469,7 @@ float: right;
     transition: margin-top .3s;
 }
 .navbar-default .navbar-nav > li > a{
-    color: #A4A4A4 !important;
+    color: #154368 !important;
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;
     border: 1px solid #E0E0E0;
@@ -331,8 +479,8 @@ float: right;
     transition: color 200ms, border 200ms;
 }
 .navbar-default .navbar-nav > li > a:hover {
-        border: 1px solid #154368;
-        color: #154368 !important;
+        border: 1px solid #828282;
+        color: #a4a4a4 !important;
 }
 .navbar-default .navbar-brand {
     color: #FFF !important;
@@ -410,4 +558,73 @@ float: right;
 }
 .navbar-default .navbar-toggle {
     border-color: #FFF !important;
+}
+
+
+
+/*/////////////////////
+MEDIA QUERIES
+/////////////////////*/
+
+@media all and (max-width: 768px){
+.slide1 {
+    padding-top: 20px;
+    width: 900px;
+    height: 465px;
+}
+ .slide1 img {
+    margin-top: 20px;
+    margin-left: -80px;
+    width: 400px;
+    height: 303px;
+}
+.slide2 {
+    width: 600px;
+    height: 465px;
+    background: #2570a6;
+    border-left: 1px solid #194f77;
+}
+.tagline {
+    width: 400px;
+    float: right;
+    height: 400px;
+    margin-right: 50px;
+}
+.tagline1 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    width: 500px;
+    color: #d3d3d3;
+    line-height: 45px;
+    margin-right: 100px;
+}
+.tagline span {
+    text-align: left;
+    font-size: 35px;
+    font-weight: bolder;
+    line-height: 45px;
+    color: #f1f1f1;
+    text-shadow: 4px 3px 0px #154268, 7px 6px 0px rgba(0,0,0,0.1);
+}
+.tagline2 {
+    padding-top: 120px;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: left;
+    font-weight: bold;
+    color: #f1f1f1;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+        0px 8px 13px rgba(0,0,0,0.1),
+        0px 18px 23px rgba(0,0,0,0.1);
+}
+}
+
+@media all and (max-width: 960px){
+  
+}
+@media all and (max-width: 480px){
+  .first {
+    width: 70%;
+  }
 }

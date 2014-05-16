@@ -49,7 +49,7 @@
 </script>
 <script type="text/javascript">
 $(function(){
- var shrinkHeader = 10;
+ var shrinkHeader = 200;
   $(window).scroll(function() {
     var scroll = getCurrentScroll();
       if ( scroll >= shrinkHeader ) {
@@ -109,7 +109,13 @@ function getCurrentScroll() {
       <!-- If the slide contains multiple elements you should wrap them in a div with the class .showcase-content-wrapper. -->
       <div class="showcase-content-wrapper">
         <!-- As for dynamic height you need to set the width and height of images in the source for viewline to work. -->
-        <img src="assets/img/01.jpg" alt="01" width="700px" height="470px" />
+        <div class="slide1">
+          <img src="assets/img/screen1.png" width="500px" height="403px" class="screen1">
+          <div class="tagline">
+            <p class="tagline1">An average person spends <span>3,680 hours</span>, or<br> <span>153 days</span> looking for lost or stolen items.</p>
+            <p class="tagline2">We're here to fix that.</p>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Put the thumbnail content in a div with the class .showcase-thumbnail -->
@@ -118,7 +124,9 @@ function getCurrentScroll() {
   <div class="showcase-slide">
     <div class="showcase-content">
       <div class="showcase-content-wrapper">
-        <img src="assets/img/02.jpg" alt="02" width="700px" height="470px" />
+        <div class="slide2">
+            <div class="sticker"><img src="assets/img/sticker.png"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -126,8 +134,10 @@ function getCurrentScroll() {
   <div class="showcase-slide">
     <div class="showcase-content">
       <div class="showcase-content-wrapper">
-        <img src="assets/img/03.jpg" alt="03" width="700px" height="470px" />
-        <p class="static-caption">Yep, this is also a static caption for this image.</p>
+        <div class="slide3">
+        <div class="screen2"><img src="http://placehold.it/300x375"></div>
+        <div class="bottom"><p class="screenshotInfo">Yo this is some info on dat screenshot mane ya feeeel mee? Gabe Newell is the best in life. Shrek is love. Shrek is life.</p></div>
+        </div>
       </div>
     </div>
   </div>
@@ -135,7 +145,10 @@ function getCurrentScroll() {
   <div class="showcase-slide">
     <div class="showcase-content">
       <div class="showcase-content-wrapper">
-        <img src="assets/img/04.jpg" alt="04" width="579px" />
+        <div class="slide4">
+        <div class="screen3"><img src="http://placehold.it/300x375"></div>
+        <div class="bottom"><p class="screenshotInfo">Yo this is some info on dat screenshot mane ya feeeel mee? Gabe Newell is the best in life. Shrek is love. Shrek is life.</p></div>
+        </div>
       </div>
     </div>
   </div>
@@ -143,15 +156,12 @@ function getCurrentScroll() {
   <div class="showcase-slide">
     <div class="showcase-content">
       <div class="showcase-content-wrapper">
-        <img src="assets/img/06.jpg" alt="07" width="700px" height="470px" />
-      </div>
-    </div>
-  </div>
-  <!-- Each child div in #showcase represents a slide -->
-  <div class="showcase-slide">
-    <div class="showcase-content">
-      <div class="showcase-content-wrapper">
-        <img src="assets/img/05.jpg" alt="05" width="700px" />
+        <div class="slide5">
+            <div class="final">
+              <img src="assets/img/logoInvert.svg" class="logoInvert">
+              <a class="more" href="#features"><div class="morebutton">Discover more.</div></a>
+            </div>
+        </div>
       </div>
     </div>
   </div>
@@ -237,15 +247,16 @@ function getCurrentScroll() {
 <!--/////////////////////-->
 <!-- HOW IT WORKS -->
 <!--/////////////////////-->
-<!--<div class="howItWorks" id="how">
-  <div class="container">
-    <div class="row">
-      <div class="sectionHeader2 col-lg-3 col-lg-offset-9 col-md-3  col-md-offset-9 col-sm-4 col-sm-offset-8 col-xs-12"> 
-        <p>Too much text beyond this point, lets talk about it.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+
+<div class="howItWorks" id="how"> <!-- howItWorks -->
+  <div class="container"> <!-- container -->
+    <div class="row"> <!-- row -->
+      <div class="sectionHeader2 col-lg-3 col-lg-offset-9 col-md-3  col-md-offset-9 col-sm-4 col-sm-offset-8 col-xs-12"> <!--sectionHeader2-->
+        <p class="howItWorksTitle">Too much text beyond this point, lets talk about it.</p>
+      </div><!-- /sectionHeader2 -->
+    </div><!-- /row -->
+    <div class="row"> <!-- row -->
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"> <!-- column -->
         <i class="fa fa-plus-square"></i><br />
         <h3>Attach Your dtectors</h1>
         <p>Place your color-coded dtector sticker on your item (keys, phone, laptop, wallet) and register that item to your application.</p>
@@ -264,7 +275,7 @@ function getCurrentScroll() {
       </div>
     </div> 
   </div>
-</div> -->
+</div>
 
 <!--/////////////////////-->
 <!-- SPECS -->
@@ -341,5 +352,22 @@ function getCurrentScroll() {
 <script type="text/javascript" src="assets/js/showcase.js"></script>
 <script type="text/javascript" src="assets/js/slider.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+  $(this).find('.showcase-content-container').stop().delay(300).animate({height: 'toggle'});
+  $(this).find('.screen1').delay(750).fadeIn(350);
+  $(this).find('.tagline1').delay(1000).fadeIn(500);
+  $(this).find('.tagline2').delay(1100).fadeIn(1000);
+});
+
+$(function nextButton () {
+$('.showcase-arrow-next').one('click', function(e) {
+  $('.sticker').delay(500).fadeIn('normal');
+  $('.screen2, .screen3').delay(1000).animate({height: 'toggle'});
+  $('.bottom, .bottom2').delay(1300).animate({height: 'toggle'});
+  $('.screenshotInfo').delay(2000).fadeIn('normal');
+});
+});
+</script>
 </body>
 </html>

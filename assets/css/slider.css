@@ -64,7 +64,8 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acron
 
 	.showcase-content-container
 	{
-		background-color: #000;
+		background-color: #205E8C;
+		display: none;
 	}
 	
 	/* Navigation arrows */
@@ -102,6 +103,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acron
 	/* Content */
 	.showcase-content
 	{
+		width: 100%;
 		background-color: #000;
 		text-align: center;
 	}
@@ -110,7 +112,7 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acron
 		{
 			text-align: center;
 			height: 470px;
-			width: 700px;
+			width: 100%;
 			display: table-cell;
 			vertical-align: middle;
 		}
